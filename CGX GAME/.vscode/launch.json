@@ -1,0 +1,59 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Pyramid Application",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pyramid.scripts.pserve",
+            "args": [
+                "${workspaceFolder}\\development.ini"
+            ],
+            "pyramid": true,
+            "jinja": true
+        },
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/EoniaAI.exe", // Path to your executable
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true, // Set to true if you want a separate console window
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb.exe", // Path to your gdb debugger (if needed)
+            "preLaunchTask": "build EoniaAI" // Run the build task before launching
+        }
+    ]
+}
+// Compare this snippet from .vscode/launch.json:

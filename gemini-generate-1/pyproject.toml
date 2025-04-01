@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_project"
+version = "0.1.0"
+dependencies = [
+    "some_package",
+    "another_package; python_version >= '3.7'", # Correct marker
+    "yet_another_package; sys_platform == 'win32'", # Correct marker
+]
