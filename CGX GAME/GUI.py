@@ -7,8 +7,9 @@ from PySide6.QtWidgets import (
     QVBoxLayout,
     QWidget,
 )
-from PySide6.QtCore import QDir, Qt, QFileSystemModel  # Corrected import
-#from PySide6.QtGui import QFileSystemModel #removed
+from PySide6.QtCore import QDir, Qt  # Keep QDir and Qt here
+from PySide6.QtGui import QFileSystemModel # Import QFileSystemModel from QtGui
+
 class FolderGUI(QMainWindow):
     def __init__(self, folder_path):
         super().__init__()
